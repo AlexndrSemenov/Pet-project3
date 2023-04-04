@@ -1,0 +1,39 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true,
+        "commonjs": true
+    },
+    "parser": "@babel/eslint-parser",
+    "extends": [
+        "eslint:recommended",
+        "airbnb",
+        "airbnb/hooks",
+        "plugin:react/recommended",
+        "standard-with-typescript",
+        "prettier"
+    ],
+    "overrides": [
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+          "jsx": true // enable linting for jsx files
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module",
+        "allowImportExportEverywhere": false,
+        "codeFrame": true,
+        "requireConfigFile": false,
+        "babelOptions": {
+            "presets": ["@babel/preset-react"]
+        },
+        "project": ["./tsconfig.json"]
+    },
+    "plugins": [
+        "react", "react-hooks"
+    ],
+    "rules": {
+        "strict": 0
+    }
+}

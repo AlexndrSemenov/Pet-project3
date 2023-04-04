@@ -1,0 +1,27 @@
+$color: darkred;
+
+.nav {
+  height: 60px;
+  background: darkblue; 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+  @media screen and (max-width: 320px) {
+    height: 120px;
+    flex-direction:column;
+  }
+}
+
+.main {
+  padding: 1rem;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+}
+
+.error {
+  color: $color;
+}
